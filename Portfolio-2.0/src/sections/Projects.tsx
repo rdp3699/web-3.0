@@ -7,8 +7,7 @@ import grainImage from '@/assets/images/grain.jpg';
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { TapeSection } from "./Tape";
-import { TestimonialsSection } from "./Testimonials";
-import Image from "next/image";
+
 
 const portfolioProjects = [
   {
@@ -79,7 +78,7 @@ export const ProjectsSection = ({id}:{id:string}) => {
               </a>
               </div>
               <div className="relative">
-              <Image className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:absolute lg:max-w-none" src={project.image.src} alt={project.title} />
+              <img className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:absolute lg:max-w-none" src={project.image.src} alt={project.title} />
               </div>
               </div>
             </Card>
