@@ -67,7 +67,7 @@ export const Hero = ({id}:{id:string}) => {
           </div>
         </div>
         <div className='max-w-lg mx-auto'>
-          <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>🚀 Hi, I'm Rutvik!</h1>
+          <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>🚀 Hi, I&apos;m Rutvik!</h1>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
              <span className="text-blue-400"></span> with{" "}
             <span className="text-green-400">3+ years of experience</span> in{" "}
@@ -89,7 +89,7 @@ export const Hero = ({id}:{id:string}) => {
           <a
             href="#contact">
             <span>👋</span>
-            <span className='font-semibold'>Let's Connect</span>
+            <span className='font-semibold'>Let&apos;s Connect</span>
             </a>
           </button>
         </div>

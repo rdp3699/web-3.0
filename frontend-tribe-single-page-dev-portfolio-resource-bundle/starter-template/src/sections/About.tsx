@@ -14,7 +14,7 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import {motion} from 'framer-motion';
 import { useRef } from "react";
-
+import Image from "next/image";
 
 const toolboxItems = [
   {
@@ -90,7 +90,7 @@ export const AboutSection = ({id}:{id:string}) => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader title="My Reads" description="Explore the boks shaping my perspectives." />
               <div className="w-40 mx-auto mt-2">
-                <img src={bookImage.src} alt="Book cover" />
+                <Image src={bookImage.src} alt="Book cover" />
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
@@ -113,11 +113,11 @@ export const AboutSection = ({id}:{id:string}) => {
             </div>
           </Card>
           <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-            <img src={mapImage.src} alt="map" className="h-full w-full object-cover object-left-top" />
+            <Image src={mapImage.src} alt="map" className="h-full w-full object-cover object-left-top" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
-              <img src={smileMemoji.src} alt="smiling memoji" className="size-20" />
+              <Image src={smileMemoji.src} alt="smiling memoji" className="size-20" />
             </div>
           </Card>
           </div>

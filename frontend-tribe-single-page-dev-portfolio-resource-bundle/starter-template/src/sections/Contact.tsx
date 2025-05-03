@@ -53,8 +53,8 @@ export const ContactSection = ({ id }: { id: string }) => {
           <div className="absolute inset-0 opacity-5 -z-10" style={{ backgroundImage: `url(${grainImage.src})`, }}></div>
           <div className="flex flex-col gap-8 items-center md:flex-row md:gap-16">
             <div>
-              <h2 className='font-serif text-2xl md:text-3xl'>Let's Create something amazing together</h2>
-              <p className='text-sm mt-2 md:text-base'>Ready to bring your next project to life? Let's connect and discuss how I can help you achieve your goals.</p>
+              <h2 className='font-serif text-2xl md:text-3xl'>Let&apos;s Create something amazing together</h2>
+              <p className='text-sm mt-2 md:text-base'>Ready to bring your next project to life? Let&apos;s connect and discuss how I can help you achieve your goals.</p>
             </div>
             <div>
               <Card className="w-full max-w-md p-6 relative bg-gray-900 z-50 lg:min-w-[27rem]">

@@ -8,6 +8,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { TapeSection } from "./Tape";
 import { TestimonialsSection } from "./Testimonials";
+import Image from "next/image";
 
 const portfolioProjects = [
   {
@@ -67,7 +68,7 @@ export const ProjectsSection = ({id}:{id:string}) => {
               <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
               <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                 {project.results.map((result) => (
-                  <li className="flex gap-2 text-sm text-white/50 md:text-base">
+                  <li key={result.title} className="flex gap-2 text-sm text-white/50 md:text-base">
                     <CheckIcon className='size-5 md:size-6' />
                     <span> {result.title}</span>
                   </li>
@@ -78,7 +79,7 @@ export const ProjectsSection = ({id}:{id:string}) => {
               </a>
               </div>
               <div className="relative">
-              <img className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:absolute lg:max-w-none" src={project.image.src} alt={project.title} />
+              <Image className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:absolute lg:max-w-none" src={project.image.src} alt={project.title} />
               </div>
               </div>
             </Card>
